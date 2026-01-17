@@ -16,33 +16,34 @@
         <a href="#" class="active" data-section="accueil" data-tooltip="Page d'accueil">📁 Dossier</a>
         <a href="#" data-section="victime" data-tooltip="Informations sur la victime">💀 Victime</a>
         <a href="#" data-section="suspects" data-tooltip="Les 4 suspects">🔍 Suspects</a>
-        <a href="#" data-section="indices" data-tooltip="Preuves materielles">🔬 Indices</a>
-        <a href="#" data-section="temoignages" data-tooltip="Declarations des temoins">💬 Temoignages</a>
-        <a href="#" data-section="chronologie" data-tooltip="Deroulement des faits">⏱ Chronologie</a>
-        <a href="#" data-section="solution" data-tooltip="Soumettre votre theorie">📝 Conclusion</a>
+        <a href="#" data-section="indices" data-tooltip="Preuves matérielles">🔬 Indices</a>
+        <a href="#" data-section="temoignages" data-tooltip="Déclarations des témoins">💬 Témoignages</a>
+        <a href="#" data-section="chronologie" data-tooltip="Déroulement des faits">⏱ Chronologie</a>
+        <a href="#" data-section="solution" data-tooltip="Soumettre votre théorie">📝 Conclusion</a>
     </nav>
 
     <!-- ==================== ACCUEIL ==================== -->
     <section id="accueil" class="section active">
         <div class="header">
-            <div class="konoha-symbol">🍃</div>
+            <div class="konoha-symbol">🩸</div>
             <h1>Dossier Criminel #89-B</h1>
-            <p class="subtitle">Forces de Police de Konoha - Departement des Homicides</p>
+            <p class="subtitle">Forces de Police de Konoha - Département des Homicides</p>
 
             <div class="intro-box">
                 <div class="stamp">⚠ CONFIDENTIEL</div>
-                <p><strong>📅 Date du rapport :</strong> 15 octobre - Annee du Dragon</p>
+                <p><strong>📅 Date du rapport :</strong> 15 octobre - Année du Dragon</p>
                 <p><strong>👤 Officier en charge :</strong> Ibiki Morino</p>
                 <br>
-                <p>Le corps de <strong>Takeshi Yamamoto</strong>, marchand prospere du quartier commercial de Konoha,
-                a ete decouvert dans son entrepot a l'aube par un livreur. La victime etait affalee sur son bureau,
-                sans trace de lutte apparente.</p>
+                <p>Le corps de <strong>Jubei</strong>, propriétaire du mont-de-piété "La Griffe d'Or" situé
+                Rue des Glycines, a été découvert dans son arrière-boutique à l'aube. La victime était
+                affalée sur son bureau, poignardée dans le dos alors qu'elle comptait son argent.</p>
                 <br>
-                <p>L'autopsie preliminaire revele un <strong>empoisonnement</strong>. Quatre personnes avaient des
-                raisons d'en vouloir a la victime et n'ont pas d'alibi solide pour la nuit du meurtre.</p>
+                <p>Jubei était un vieil homme avare et très détesté dans le village. Quatre personnes avaient des
+                raisons de lui en vouloir et n'ont pas d'alibi solide pour la nuit du meurtre. Il pleuvait
+                ce soir-là.</p>
                 <br>
-                <p><em>🎯 Votre mission : analyser les suspects, les indices et les temoignages pour determiner
-                <strong>QUI</strong> a tue Takeshi Yamamoto, <strong>COMMENT</strong> et <strong>POURQUOI</strong>.</em></p>
+                <p><em>🎯 Votre mission : analyser les suspects, les indices et les témoignages pour déterminer
+                <strong>QUI</strong> a tué Jubei, <strong>COMMENT</strong> et <strong>POURQUOI</strong>.</em></p>
             </div>
         </div>
     </section>
@@ -54,14 +55,14 @@
         <div class="card victim-card" data-card-id="victime">
             <div class="card-image">💀</div>
             <div class="card-content">
-                <span class="tag suspect">DECEDE</span>
-                <h3>Takeshi Yamamoto</h3>
-                <p><strong>Age :</strong> 52 ans</p>
-                <p><strong>Profession :</strong> Marchand - Proprietaire de "Yamamoto & Fils", la plus grande boutique d'equipement ninja du quartier commercial.</p>
-                <p><strong>Situation familiale :</strong> Veuf, sans enfants directs. Sa niece Akane est sa seule famille.</p>
-                <p><strong>Reputation :</strong> Homme d'affaires impitoyable mais respecte. Connu pour ses methodes commerciales agressives. Plusieurs rivaux lui en voulaient.</p>
+                <span class="tag suspect">DÉCÉDÉ</span>
+                <h3>Jubei</h3>
+                <p><strong>Âge :</strong> 68 ans</p>
+                <p><strong>Profession :</strong> Prêteur sur gages - Propriétaire de "La Griffe d'Or", un mont-de-piété situé Rue des Glycines.</p>
+                <p><strong>Situation familiale :</strong> Célibataire, sans famille connue. Vivait seul au-dessus de sa boutique.</p>
+                <p><strong>Réputation :</strong> Vieil homme avare et très détesté. Connu pour ses taux d'intérêt exorbitants et ses saisies impitoyables. Beaucoup de villageois lui devaient de l'argent.</p>
                 <div class="detail">
-                    🕐 Derniere fois vu vivant : 21h30, fermant sa boutique. Son corps a ete decouvert a 6h00 le lendemain.
+                    🕐 Dernière fois vu vivant : 21h00, comptant son argent dans son arrière-boutique. Son corps a été découvert à 6h00 le lendemain par un voisin.
                 </div>
             </div>
         </div>
@@ -73,57 +74,61 @@
 
         <div class="grid">
             <div class="card" data-card-id="suspect-a">
-                <div class="card-image" style="background: linear-gradient(135deg, #1abc9c 0%, #16a085 100%);">👤</div>
+                <div class="card-image" style="background: linear-gradient(135deg, #1abc9c 0%, #16a085 100%);">🔨</div>
                 <div class="card-content">
                     <span class="tag suspect">SUSPECT A</span>
-                    <h3>Haruki Tanaka</h3>
-                    <p><strong>Age :</strong> 48 ans</p>
-                    <p><strong>Profession :</strong> Ancien associe commercial de Takeshi</p>
-                    <p><strong>Mobile potentiel :</strong> Dispute financiere - Haruki pretend que Takeshi l'a escroque lors de la dissolution de leur partenariat il y a 5 ans. Il aurait perdu 2 millions de ryos.</p>
+                    <h3>Gonzo (Le Forgeron)</h3>
+                    <p><strong>Âge :</strong> 42 ans</p>
+                    <p><strong>Profession :</strong> Forgeron du village - Fabrique les outils agricoles et les armes.</p>
+                    <p><strong>Mobile potentiel :</strong> Dette impayée - Jubei allait saisir sa forge le lendemain car Gonzo ne pouvait pas rembourser un prêt important.</p>
+                    <p><strong>Détail physique :</strong> Homme immense et très fort. Il est <strong>droitier</strong> (on le voit toujours tenir son marteau de la main droite).</p>
                     <div class="detail">
-                        <strong>Alibi :</strong> "J'etais chez moi toute la soiree. Ma femme peut en temoigner."
+                        <strong>Alibi :</strong> "J'étais dans mon atelier toute la soirée. Le feu était allumé, tout le quartier a vu la fumée."
                     </div>
                 </div>
             </div>
 
             <div class="card" data-card-id="suspect-b">
-                <div class="card-image" style="background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);">👩</div>
+                <div class="card-image" style="background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);">🧵</div>
                 <div class="card-content">
                     <span class="tag suspect">SUSPECT B</span>
-                    <h3>Yuki Sato</h3>
-                    <p><strong>Age :</strong> 28 ans</p>
-                    <p><strong>Profession :</strong> Serveuse au restaurant Ichiraku</p>
-                    <p><strong>Mobile potentiel :</strong> Relation secrete - Yuki entretenait une liaison avec Takeshi. Des rumeurs suggerent qu'il voulait mettre fin a leur relation.</p>
+                    <h3>Mme Kinu (La Tisseuse)</h3>
+                    <p><strong>Âge :</strong> 35 ans</p>
+                    <p><strong>Profession :</strong> Tisseuse de soie - Tient la boutique de vêtements juste à côté de "La Griffe d'Or".</p>
+                    <p><strong>Mobile potentiel :</strong> Chantage - Jubei la faisait chanter. Il possédait une lettre prouvant qu'elle avait trompé son mari (un ninja parti en mission longue).</p>
+                    <p><strong>Détail physique :</strong> Femme élégante mais <strong>très myope</strong> sans ses lunettes.</p>
                     <div class="detail">
-                        <strong>Alibi :</strong> "J'ai fini mon service a 22h et je suis rentree directement chez moi."
+                        <strong>Alibi :</strong> "Je fermais ma boutique. J'étais seule."
                     </div>
                 </div>
             </div>
 
             <div class="card" data-card-id="suspect-c">
-                <div class="card-image" style="background: linear-gradient(135deg, #9b59b6 0%, #8e44ad 100%);">👨</div>
+                <div class="card-image" style="background: linear-gradient(135deg, #9b59b6 0%, #8e44ad 100%);">🎲</div>
                 <div class="card-content">
                     <span class="tag suspect">SUSPECT C</span>
-                    <h3>Kenji Morimoto</h3>
-                    <p><strong>Age :</strong> 45 ans</p>
-                    <p><strong>Profession :</strong> Marchand rival - Proprietaire de "L'Arsenal du Shinobi"</p>
-                    <p><strong>Mobile potentiel :</strong> Jalousie commerciale - La boutique de Kenji perdait des clients au profit de Yamamoto & Fils. Une nouvelle expansion aurait pu le ruiner.</p>
+                    <h3>Taro (Le Joueur)</h3>
+                    <p><strong>Âge :</strong> 28 ans</p>
+                    <p><strong>Profession :</strong> Joueur de dés professionnel - Un bon à rien qui traîne dans les rues et parie sur tout.</p>
+                    <p><strong>Mobile potentiel :</strong> Perte au jeu - Il a perdu une fortune la veille et a juré de récupérer son argent "par tous les moyens".</p>
+                    <p><strong>Détail physique :</strong> Il est <strong>gaucher</strong> (on le voit toujours lancer les dés de la main gauche).</p>
                     <div class="detail">
-                        <strong>Alibi :</strong> "Je faisais l'inventaire dans mon arriere-boutique jusqu'a minuit. Seul."
+                        <strong>Alibi :</strong> "J'étais au stand de ramen, demandez au patron !"
                     </div>
                 </div>
             </div>
 
             <div class="card" data-card-id="suspect-d">
-                <div class="card-image" style="background: linear-gradient(135deg, #f39c12 0%, #d68910 100%);">👧</div>
+                <div class="card-image" style="background: linear-gradient(135deg, #f39c12 0%, #d68910 100%);">🧹</div>
                 <div class="card-content">
                     <span class="tag suspect">SUSPECT D</span>
-                    <h3>Akane Hayashi</h3>
-                    <p><strong>Age :</strong> 24 ans</p>
-                    <p><strong>Profession :</strong> Etudiante en medecine a l'hopital de Konoha</p>
-                    <p><strong>Mobile potentiel :</strong> Heritage - Niece et unique heritiere de Takeshi. Elle herite de toute sa fortune et de la boutique.</p>
+                    <h3>Saki (La Serveuse)</h3>
+                    <p><strong>Âge :</strong> 19 ans</p>
+                    <p><strong>Profession :</strong> Serveuse à l'auberge du village - Travaillait parfois pour Jubei comme femme de ménage.</p>
+                    <p><strong>Mobile potentiel :</strong> Licenciement injuste - Jubei l'a renvoyée sans la payer après l'avoir accusée (à tort) de vol.</p>
+                    <p><strong>Détail physique :</strong> Ses <strong>vêtements étaient trempés</strong> ce soir-là (il pleuvait).</p>
                     <div class="detail">
-                        <strong>Alibi :</strong> "J'etudiais a la bibliotheque de l'hopital jusqu'a 23h."
+                        <strong>Alibi :</strong> "Je rentrais chez moi sous la pluie."
                     </div>
                 </div>
             </div>
@@ -132,31 +137,31 @@
 
     <!-- ==================== INDICES ==================== -->
     <section id="indices" class="section">
-        <h2 class="section-title">Les Indices Materiels</h2>
+        <h2 class="section-title">Les Indices Matériels</h2>
 
         <div class="grid">
             <div class="card" data-card-id="indice-1">
                 <div class="card-image" style="background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%);">📋</div>
                 <div class="card-content">
                     <span class="tag indice">PREUVE #01</span>
-                    <h3>Rapport d'Autopsie</h3>
-                    <p><strong>Heure du deces :</strong> Entre 22h00 et 23h30</p>
-                    <p><strong>Cause :</strong> Empoisonnement par ingestion d'un derive de la Fleur de Lune Noire, un poison rare mais connu des medecins.</p>
+                    <h3>Rapport du Médecin</h3>
+                    <p><strong>Heure du décès :</strong> Entre 21h00 et 22h30</p>
+                    <p><strong>Cause :</strong> La victime a été poignardée dans le dos avec un couteau de cuisine.</p>
                     <div class="detail">
-                        Note du medecin legiste : "Ce poison agit en 30 a 45 minutes. La victime a donc ete empoisonnee entre 21h15 et 23h00."
+                        Note du médecin légiste : "L'angle de la blessure indique clairement que le tueur tenait l'arme de la <strong>main gauche</strong>."
                     </div>
                 </div>
             </div>
 
             <div class="card" data-card-id="indice-2">
-                <div class="card-image" style="background: linear-gradient(135deg, #2ecc71 0%, #27ae60 100%);">🧪</div>
+                <div class="card-image" style="background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);">🔪</div>
                 <div class="card-content">
                     <span class="tag indice">PREUVE #02</span>
-                    <h3>Fiole de Poison</h3>
-                    <p>Une petite fiole vide a ete retrouvee dans la ruelle derriere l'entrepot.</p>
-                    <p><strong>Analyse :</strong> Contenait des traces de Fleur de Lune Noire.</p>
+                    <h3>L'Arme du Crime</h3>
+                    <p>Un couteau de cuisine ensanglanté a été retrouvé dans une poubelle de la ruelle.</p>
+                    <p><strong>Origine :</strong> Ce couteau provient de l'auberge du village où travaille Saki.</p>
                     <div class="detail">
-                        Des empreintes partielles ont ete relevees mais sont trop degradees pour identification formelle. Cependant, elles semblent appartenir a une main de taille moyenne.
+                        Le couteau a pu être volé par n'importe quel client de l'auberge. Taro y mange régulièrement ses ramens.
                     </div>
                 </div>
             </div>
@@ -165,74 +170,25 @@
                 <div class="card-image" style="background: linear-gradient(135deg, #e67e22 0%, #d35400 100%);">✉️</div>
                 <div class="card-content">
                     <span class="tag document">PREUVE #03</span>
-                    <h3>Lettre Compromettante</h3>
-                    <p>Trouvee dans le tiroir ferme a cle du bureau de Takeshi.</p>
+                    <h3>Lettre de Menace</h3>
+                    <p>Un papier froissé retrouvé sur le corps de Jubei.</p>
                     <div class="detail">
-                        <em>"Takeshi, tu ne peux pas me jeter comme ca apres tout ce que j'ai sacrifie pour toi. Si tu refuses de me voir ce soir, tu le regretteras. - Y."</em>
+                        <em>"Si tu ne me rends pas mon argent ce soir, tu vas le regretter !"</em>
+                        <br><br>
+                        La lettre n'est pas signée, mais l'écriture semble masculine et hâtive.
                     </div>
                 </div>
             </div>
 
             <div class="card" data-card-id="indice-4">
-                <div class="card-image" style="background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);">📅</div>
-                <div class="card-content">
-                    <span class="tag document">PREUVE #04</span>
-                    <h3>Agenda de la Victime</h3>
-                    <p>L'agenda professionnel de Takeshi revele plusieurs rendez-vous interessants :</p>
-                    <div class="detail">
-                        - 18h : "Reunion banque - pret expansion"<br>
-                        - 20h : "Diner - Y. (annule)"<br>
-                        - Note en marge : "Finaliser contrat Rue du Commerce - K. va etre furieux"
-                    </div>
-                </div>
-            </div>
-
-            <div class="card" data-card-id="indice-5">
-                <div class="card-image" style="background: linear-gradient(135deg, #1abc9c 0%, #16a085 100%);">🗺️</div>
-                <div class="card-content">
-                    <span class="tag document">PREUVE #05</span>
-                    <h3>Plan d'Expansion</h3>
-                    <p>Documents officiels trouves sur le bureau :</p>
-                    <p>Takeshi avait signe un contrat pour ouvrir une <strong>deuxieme boutique Rue du Commerce</strong>, juste en face de "L'Arsenal du Shinobi".</p>
-                    <div class="detail">
-                        L'ouverture etait prevue dans 2 semaines. Cela aurait certainement ruine la concurrence directe.
-                    </div>
-                </div>
-            </div>
-
-            <div class="card" data-card-id="indice-6">
-                <div class="card-image" style="background: linear-gradient(135deg, #9b59b6 0%, #8e44ad 100%);">🍵</div>
-                <div class="card-content">
-                    <span class="tag indice">PREUVE #06</span>
-                    <h3>Tasse de The</h3>
-                    <p>Une tasse a moitie vide a ete trouvee sur le bureau de Takeshi.</p>
-                    <p><strong>Analyse :</strong> Le the contenait des traces du poison.</p>
-                    <div class="detail">
-                        La theiere etait dans l'arriere-boutique. Quelqu'un a du verser le poison directement dans la tasse.
-                    </div>
-                </div>
-            </div>
-
-            <div class="card" data-card-id="indice-7">
-                <div class="card-image" style="background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);">🔓</div>
-                <div class="card-content">
-                    <span class="tag indice">PREUVE #07</span>
-                    <h3>Serrure Forcee</h3>
-                    <p>La porte arriere de l'entrepot presente des marques de crochetage.</p>
-                    <div class="detail">
-                        Les marques sont recentes. Quelqu'un s'est introduit par l'arriere sans utiliser la porte principale.
-                    </div>
-                </div>
-            </div>
-
-            <div class="card" data-card-id="indice-8">
                 <div class="card-image" style="background: linear-gradient(135deg, #f1c40f 0%, #f39c12 100%);">👣</div>
                 <div class="card-content">
-                    <span class="tag indice">PREUVE #08</span>
-                    <h3>Traces de Pas</h3>
-                    <p>Des empreintes de pas boueuses menent de la porte arriere jusqu'au bureau.</p>
+                    <span class="tag indice">PREUVE #04</span>
+                    <h3>Traces de Boue</h3>
+                    <p>Des traces de pas boueuses ont été retrouvées sur le sol de la boutique.</p>
+                    <p><strong>Observation :</strong> Les traces entrent par la porte principale, mais aucune trace ne ressort par cette porte.</p>
                     <div class="detail">
-                        Pointure : environ 42 (taille masculine moyenne). La boue correspond a celle du chantier de la Rue du Commerce.
+                        La boutique possède une <strong>petite fenêtre arrière</strong>. Seule une personne de taille normale pourrait passer par cette ouverture. Un homme de forte corpulence ne pourrait pas s'y faufiler.
                     </div>
                 </div>
             </div>
@@ -241,77 +197,77 @@
 
     <!-- ==================== TEMOIGNAGES ==================== -->
     <section id="temoignages" class="section">
-        <h2 class="section-title">Les Temoignages</h2>
+        <h2 class="section-title">Les Témoignages</h2>
 
         <div class="grid">
             <div class="card" data-card-id="temoin-1">
                 <div class="card-image" style="background: linear-gradient(135deg, #95a5a6 0%, #7f8c8d 100%);">🍜</div>
                 <div class="card-content">
-                    <span class="tag temoignage">TEMOIN #01</span>
-                    <h3>Teuchi (Patron d'Ichiraku)</h3>
-                    <p><strong>Declaration :</strong></p>
+                    <span class="tag temoignage">TÉMOIN #01</span>
+                    <h3>Teuchi (Patron du Stand de Ramen)</h3>
+                    <p><strong>Déclaration :</strong></p>
                     <div class="detail">
-                        "Yuki a bien fini son service a 22h comme d'habitude. Mais je l'ai vue partir en direction du quartier commercial, pas vers chez elle. Elle avait l'air tres agitee."
+                        "Taro était bien chez moi ce soir-là. Mais il est parti aux toilettes pendant environ <strong>30 minutes</strong>... C'était pile à l'heure où le crime a dû se produire. C'est bizarre, non ?"
                     </div>
                 </div>
             </div>
 
             <div class="card" data-card-id="temoin-2">
-                <div class="card-image" style="background: linear-gradient(135deg, #95a5a6 0%, #7f8c8d 100%);">🛡️</div>
+                <div class="card-image" style="background: linear-gradient(135deg, #95a5a6 0%, #7f8c8d 100%);">🏠</div>
                 <div class="card-content">
-                    <span class="tag temoignage">TEMOIN #02</span>
-                    <h3>Garde de Nuit</h3>
-                    <p><strong>Declaration :</strong></p>
+                    <span class="tag temoignage">TÉMOIN #02</span>
+                    <h3>Voisin de la Forge</h3>
+                    <p><strong>Déclaration :</strong></p>
                     <div class="detail">
-                        "J'ai vu un homme sortir de la ruelle derriere la boutique Yamamoto vers 22h45. Il marchait vite et portait une capuche. Taille moyenne, carrure robuste."
+                        "J'ai vu la fumée sortir de la forge de Gonzo toute la soirée. Il travaillait tard comme d'habitude. On entendait le bruit du marteau jusqu'à au moins 23h."
                     </div>
                 </div>
             </div>
 
             <div class="card" data-card-id="temoin-3">
-                <div class="card-image" style="background: linear-gradient(135deg, #95a5a6 0%, #7f8c8d 100%);">🏦</div>
+                <div class="card-image" style="background: linear-gradient(135deg, #95a5a6 0%, #7f8c8d 100%);">🧵</div>
                 <div class="card-content">
-                    <span class="tag temoignage">TEMOIN #03</span>
-                    <h3>Employe de la Banque</h3>
-                    <p><strong>Declaration :</strong></p>
+                    <span class="tag temoignage">TÉMOIN #03</span>
+                    <h3>Client de Mme Kinu</h3>
+                    <p><strong>Déclaration :</strong></p>
                     <div class="detail">
-                        "M. Yamamoto est venu a 18h pour finaliser son pret. Il etait tres enthousiaste. Il a mentionne que 'certains concurrents allaient avoir une mauvaise surprise'."
+                        "J'ai vu Mme Kinu fermer sa boutique vers 20h30. Elle cherchait ses lunettes partout, elle les avait encore perdues. Sans elles, elle ne voit rien à plus de deux mètres !"
                     </div>
                 </div>
             </div>
 
             <div class="card" data-card-id="temoin-4">
-                <div class="card-image" style="background: linear-gradient(135deg, #95a5a6 0%, #7f8c8d 100%);">🏠</div>
+                <div class="card-image" style="background: linear-gradient(135deg, #95a5a6 0%, #7f8c8d 100%);">☔</div>
                 <div class="card-content">
-                    <span class="tag temoignage">TEMOIN #04</span>
-                    <h3>Voisine d'Haruki Tanaka</h3>
-                    <p><strong>Declaration :</strong></p>
+                    <span class="tag temoignage">TÉMOIN #04</span>
+                    <h3>Passant sous la Pluie</h3>
+                    <p><strong>Déclaration :</strong></p>
                     <div class="detail">
-                        "J'ai vu M. Tanaka rentrer chez lui vers 20h30. Je ne l'ai pas vu ressortir de la soiree, mais je me suis couchee tot, vers 21h30."
+                        "J'ai croisé la petite Saki vers 21h30, elle rentrait chez elle sous la pluie battante. Elle était complètement trempée et semblait pressée d'arriver chez elle."
                     </div>
                 </div>
             </div>
 
             <div class="card" data-card-id="temoin-5">
-                <div class="card-image" style="background: linear-gradient(135deg, #95a5a6 0%, #7f8c8d 100%);">📚</div>
+                <div class="card-image" style="background: linear-gradient(135deg, #95a5a6 0%, #7f8c8d 100%);">🎲</div>
                 <div class="card-content">
-                    <span class="tag temoignage">TEMOIN #05</span>
-                    <h3>Bibliothecaire de l'Hopital</h3>
-                    <p><strong>Declaration :</strong></p>
+                    <span class="tag temoignage">TÉMOIN #05</span>
+                    <h3>Joueur de Dés</h3>
+                    <p><strong>Déclaration :</strong></p>
                     <div class="detail">
-                        "Akane Hayashi etait bien a la bibliotheque. Elle est arrivee vers 19h. Je l'ai vue partir vers 22h45, pas 23h comme elle le pretend. Elle semblait pressee."
+                        "Taro a perdu gros hier soir aux dés. Il était furieux ! Il a dit qu'il allait 'récupérer son argent chez le vieux Jubei, d'une manière ou d'une autre'. Je pensais qu'il plaisantait..."
                     </div>
                 </div>
             </div>
 
             <div class="card" data-card-id="temoin-6">
-                <div class="card-image" style="background: linear-gradient(135deg, #95a5a6 0%, #7f8c8d 100%);">📦</div>
+                <div class="card-image" style="background: linear-gradient(135deg, #95a5a6 0%, #7f8c8d 100%);">🏪</div>
                 <div class="card-content">
-                    <span class="tag temoignage">TEMOIN #06</span>
-                    <h3>Livreur du Quartier</h3>
-                    <p><strong>Declaration :</strong></p>
+                    <span class="tag temoignage">TÉMOIN #06</span>
+                    <h3>Serveur de l'Auberge</h3>
+                    <p><strong>Déclaration :</strong></p>
                     <div class="detail">
-                        "Vers 22h, j'ai vu de la lumiere dans la boutique de M. Morimoto alors qu'elle etait censee etre fermee. J'ai aussi vu quelqu'un sortir par la porte de service."
+                        "Un de nos couteaux de cuisine a disparu la semaine dernière. On n'a jamais su qui l'avait pris. Beaucoup de gens passent par nos cuisines, y compris Taro qui vient manger presque tous les soirs."
                     </div>
                 </div>
             </div>
@@ -320,97 +276,97 @@
 
     <!-- ==================== CHRONOLOGIE ==================== -->
     <section id="chronologie" class="section">
-        <h2 class="section-title">Chronologie des Evenements</h2>
+        <h2 class="section-title">Chronologie des Événements</h2>
 
         <div class="timeline">
             <div class="timeline-item">
-                <h4>18h00</h4>
-                <p>Takeshi Yamamoto se rend a la banque pour finaliser son pret d'expansion. Il est vu "enthousiaste" par l'employe.</p>
-            </div>
-
-            <div class="timeline-item">
                 <h4>19h00</h4>
-                <p>Akane Hayashi arrive a la bibliotheque de l'hopital pour etudier.</p>
+                <p>Début de la pluie sur le village. Taro perd une grosse somme aux dés et jure de récupérer son argent.</p>
             </div>
 
             <div class="timeline-item">
                 <h4>20h00</h4>
-                <p>Diner prevu avec "Y." (Yuki?) annule selon l'agenda de Takeshi.</p>
+                <p>Taro arrive au stand de ramen de Teuchi. Il commande des ramens et semble nerveux.</p>
             </div>
 
             <div class="timeline-item">
                 <h4>20h30</h4>
-                <p>Haruki Tanaka est vu rentrant chez lui par sa voisine.</p>
+                <p>Mme Kinu ferme sa boutique. Elle cherche ses lunettes qu'elle a perdues. Gonzo travaille à sa forge (fumée visible).</p>
+            </div>
+
+            <div class="timeline-item">
+                <h4>21h00</h4>
+                <p>Jubei est vu pour la dernière fois, comptant son argent dans son arrière-boutique.</p>
+            </div>
+
+            <div class="timeline-item critical">
+                <h4>21h00 - 22h30</h4>
+                <p style="color: var(--color-blood); font-weight: bold;">⚠️ FENÊTRE DU CRIME - Le meurtre a été commis pendant cette période selon le rapport du médecin.</p>
             </div>
 
             <div class="timeline-item">
                 <h4>21h30</h4>
-                <p>Takeshi Yamamoto ferme sa boutique. C'est la derniere fois qu'il est vu vivant.</p>
+                <p>Saki est vue rentrant chez elle sous la pluie battante, complètement trempée. Taro s'absente du stand de ramen "pour aller aux toilettes".</p>
             </div>
 
             <div class="timeline-item">
                 <h4>22h00</h4>
-                <p>Yuki Sato termine son service chez Ichiraku. Elle est vue partant vers le quartier commercial. Lumiere vue dans la boutique de Morimoto.</p>
-            </div>
-
-            <div class="timeline-item critical">
-                <h4>21h15 - 23h00</h4>
-                <p style="color: var(--color-blood); font-weight: bold;">⚠️ FENETRE D'EMPOISONNEMENT - Le poison a ete administre pendant cette periode (effet en 30-45 min).</p>
+                <p>Taro revient au stand de ramen après 30 minutes d'absence. La forge de Gonzo fume toujours.</p>
             </div>
 
             <div class="timeline-item">
-                <h4>22h45</h4>
-                <p>Un homme a capuche est vu sortant de la ruelle derriere la boutique Yamamoto. Akane quitte la bibliotheque (15 minutes avant ce qu'elle pretend).</p>
+                <h4>23h00</h4>
+                <p>La pluie cesse. Le village est calme. Gonzo termine son travail à la forge.</p>
             </div>
 
             <div class="timeline-item">
                 <h4>06h00 (lendemain)</h4>
-                <p>Le corps de Takeshi est decouvert par un livreur.</p>
+                <p>Le corps de Jubei est découvert par un voisin venu récupérer un objet mis en gage.</p>
             </div>
         </div>
     </section>
 
     <!-- ==================== FORMULAIRE DE CONCLUSION ==================== -->
     <section id="solution" class="section">
-        <h2 class="section-title">Soumettez Votre Theorie</h2>
+        <h2 class="section-title">Soumettez Votre Théorie</h2>
 
         <div class="solution-section">
             <div class="theory-form">
-                <h3>🔎 Rapport d'Enquete Final</h3>
+                <h3>🔎 Rapport d'Enquête Final</h3>
 
                 <form id="theory-form">
                     <div class="form-group">
                         <label for="suspect-choice">👤 Qui est le coupable selon vous ?</label>
                         <select id="suspect-choice" required>
-                            <option value="">-- Selectionnez un suspect --</option>
-                            <option value="haruki">Haruki Tanaka (Ancien associe)</option>
-                            <option value="yuki">Yuki Sato (Serveuse)</option>
-                            <option value="kenji">Kenji Morimoto (Marchand rival)</option>
-                            <option value="akane">Akane Hayashi (Niece)</option>
+                            <option value="">-- Sélectionnez un suspect --</option>
+                            <option value="gonzo">Gonzo (Le Forgeron)</option>
+                            <option value="kinu">Mme Kinu (La Tisseuse)</option>
+                            <option value="taro">Taro (Le Joueur)</option>
+                            <option value="saki">Saki (La Serveuse)</option>
                         </select>
                     </div>
 
                     <div class="form-group">
-                        <label for="motive">💡 Quel etait son mobile (sa raison) ?</label>
-                        <textarea id="motive" placeholder="Expliquez pourquoi cette personne aurait voulu tuer Takeshi..." required></textarea>
+                        <label for="motive">💡 Quel était son mobile (sa raison) ?</label>
+                        <textarea id="motive" placeholder="Expliquez pourquoi cette personne aurait voulu tuer Jubei..." required></textarea>
                     </div>
 
                     <div class="form-group">
-                        <label for="evidence">🔗 Quels indices soutiennent votre theorie ?</label>
-                        <textarea id="evidence" placeholder="Listez les preuves et temoignages qui accusent cette personne..." required></textarea>
+                        <label for="evidence">🔗 Quels indices soutiennent votre théorie ?</label>
+                        <textarea id="evidence" placeholder="Listez les preuves et témoignages qui accusent cette personne..." required></textarea>
                     </div>
 
                     <div class="form-group">
-                        <label for="method">⚗️ Comment le meurtre a-t-il ete commis ?</label>
-                        <textarea id="method" placeholder="Decrivez comment le coupable s'y est pris..." required></textarea>
+                        <label for="method">🗡️ Comment le meurtre a-t-il été commis ?</label>
+                        <textarea id="method" placeholder="Décrivez comment le coupable s'y est pris..." required></textarea>
                     </div>
 
-                    <button type="submit" class="submit-btn">📨 Soumettre ma Theorie</button>
+                    <button type="submit" class="submit-btn">📨 Soumettre ma Théorie</button>
                 </form>
 
                 <div class="confirmation-message" id="confirmation">
-                    <h3>✅ Theorie Enregistree !</h3>
-                    <p>Votre rapport a bien ete soumis. Votre professeur revelera la solution.</p>
+                    <h3>✅ Théorie Enregistrée !</h3>
+                    <p>Votre rapport a bien été soumis. Votre professeur révélera la solution.</p>
                 </div>
             </div>
         </div>
@@ -423,7 +379,7 @@
         <div class="progress-bar">
             <div class="progress-fill" id="progress-fill" style="width: 0%"></div>
         </div>
-        <p class="progress-text"><span id="viewed-count">0</span> / <span id="total-count">19</span> elements consultes</p>
+        <p class="progress-text"><span id="viewed-count">0</span> / <span id="total-count">15</span> éléments consultés</p>
     </div>
 
     <!-- ==================== BLOC-NOTES ==================== -->

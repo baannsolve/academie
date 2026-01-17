@@ -600,7 +600,7 @@ h1::after {
 }
 
 .victim-card .card-image::after {
-    content: 'DECEDE';
+    content: 'DÉCÉDÉ';
     position: absolute;
     bottom: 10px;
     right: 10px;
