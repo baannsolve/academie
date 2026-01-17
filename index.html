@@ -19,7 +19,6 @@
         <a href="#" data-section="indices" data-tooltip="Preuves matérielles">🔬 Indices</a>
         <a href="#" data-section="temoignages" data-tooltip="Déclarations des témoins">💬 Témoignages</a>
         <a href="#" data-section="chronologie" data-tooltip="Déroulement des faits">⏱ Chronologie</a>
-        <a href="#" data-section="solution" data-tooltip="Soumettre votre théorie">📝 Conclusion</a>
     </nav>
 
     <!-- ==================== ACCUEIL ==================== -->
@@ -31,11 +30,11 @@
 
             <div class="intro-box">
                 <div class="stamp">⚠ CONFIDENTIEL</div>
-                <p><strong>📅 Date du rapport :</strong> 15 octobre - Année du Dragon</p>
-                <p><strong>👤 Officier en charge :</strong> Ibiki Morino</p>
+                <p><strong>📅 Date du rapport :</strong> 17 janvier</p>
+                <p><strong>👤 Officier en charge :</strong> XXX - XXX </p>
                 <br>
                 <p>Le corps de <strong>Jubei</strong>, propriétaire du mont-de-piété "La Griffe d'Or" situé
-                Rue des Glycines, a été découvert dans son arrière-boutique à l'aube. La victime était
+                dans les quartiers de Konoha, a été découvert dans son arrière-boutique à l'aube. La victime était
                 affalée sur son bureau, poignardée dans le dos alors qu'elle comptait son argent.</p>
                 <br>
                 <p>Jubei était un vieil homme avare et très détesté dans le village. Quatre personnes avaient des
@@ -58,7 +57,7 @@
                 <span class="tag suspect">DÉCÉDÉ</span>
                 <h3>Jubei</h3>
                 <p><strong>Âge :</strong> 68 ans</p>
-                <p><strong>Profession :</strong> Prêteur sur gages - Propriétaire de "La Griffe d'Or", un mont-de-piété situé Rue des Glycines.</p>
+                <p><strong>Profession :</strong> Prêteur sur gages - Propriétaire de "La Griffe d'Or", un mont-de-piété situé dans les quartiers de Konoha.</p>
                 <p><strong>Situation familiale :</strong> Célibataire, sans famille connue. Vivait seul au-dessus de sa boutique.</p>
                 <p><strong>Réputation :</strong> Vieil homme avare et très détesté. Connu pour ses taux d'intérêt exorbitants et ses saisies impitoyables. Beaucoup de villageois lui devaient de l'argent.</p>
                 <div class="detail">
@@ -325,62 +324,6 @@
             </div>
         </div>
     </section>
-
-    <!-- ==================== FORMULAIRE DE CONCLUSION ==================== -->
-    <section id="solution" class="section">
-        <h2 class="section-title">Soumettez Votre Théorie</h2>
-
-        <div class="solution-section">
-            <div class="theory-form">
-                <h3>🔎 Rapport d'Enquête Final</h3>
-
-                <form id="theory-form">
-                    <div class="form-group">
-                        <label for="suspect-choice">👤 Qui est le coupable selon vous ?</label>
-                        <select id="suspect-choice" required>
-                            <option value="">-- Sélectionnez un suspect --</option>
-                            <option value="gonzo">Gonzo (Le Forgeron)</option>
-                            <option value="kinu">Mme Kinu (La Tisseuse)</option>
-                            <option value="taro">Taro (Le Joueur)</option>
-                            <option value="saki">Saki (La Serveuse)</option>
-                        </select>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="motive">💡 Quel était son mobile (sa raison) ?</label>
-                        <textarea id="motive" placeholder="Expliquez pourquoi cette personne aurait voulu tuer Jubei..." required></textarea>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="evidence">🔗 Quels indices soutiennent votre théorie ?</label>
-                        <textarea id="evidence" placeholder="Listez les preuves et témoignages qui accusent cette personne..." required></textarea>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="method">🗡️ Comment le meurtre a-t-il été commis ?</label>
-                        <textarea id="method" placeholder="Décrivez comment le coupable s'y est pris..." required></textarea>
-                    </div>
-
-                    <button type="submit" class="submit-btn">📨 Soumettre ma Théorie</button>
-                </form>
-
-                <div class="confirmation-message" id="confirmation">
-                    <h3>✅ Théorie Enregistrée !</h3>
-                    <p>Votre rapport a bien été soumis. Votre professeur révélera la solution.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ==================== COMPTEUR DE PROGRESSION ==================== -->
-    <div class="progress-tracker" id="progress-tracker">
-        <button class="minimize-btn" onclick="toggleProgress()">−</button>
-        <h4>📊 Progression</h4>
-        <div class="progress-bar">
-            <div class="progress-fill" id="progress-fill" style="width: 0%"></div>
-        </div>
-        <p class="progress-text"><span id="viewed-count">0</span> / <span id="total-count">15</span> éléments consultés</p>
-    </div>
 
     <!-- ==================== BLOC-NOTES ==================== -->
     <button class="notepad-toggle" onclick="toggleNotepad()" data-tooltip="Bloc-notes">📝</button>

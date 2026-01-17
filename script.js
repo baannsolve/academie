@@ -73,51 +73,6 @@ function animateCards(section) {
     });
 }
 
-// ============================================
-// SUIVI DE PROGRESSION
-// ============================================
-const viewedElements = new Set();
-let totalElements = 0;
-
-function initProgress() {
-    totalElements = document.querySelectorAll('.card[data-card-id]').length;
-    document.getElementById('total-count').textContent = totalElements;
-    loadProgress();
-}
-
-function updateProgress() {
-    const count = viewedElements.size;
-    const percentage = (count / totalElements) * 100;
-
-    document.getElementById('viewed-count').textContent = count;
-    document.getElementById('progress-fill').style.width = percentage + '%';
-
-    // Sauvegarder dans localStorage
-    localStorage.setItem('viewedElements', JSON.stringify([...viewedElements]));
-}
-
-function loadProgress() {
-    const saved = localStorage.getItem('viewedElements');
-    if (saved) {
-        const savedArray = JSON.parse(saved);
-        savedArray.forEach(id => viewedElements.add(id));
-
-        // Marquer les cartes comme vues
-        viewedElements.forEach(id => {
-            const card = document.querySelector(`[data-card-id="${id}"]`);
-            if (card) card.classList.add('viewed');
-        });
-
-        updateProgress();
-    }
-}
-
-function toggleProgress() {
-    const tracker = document.getElementById('progress-tracker');
-    const btn = tracker.querySelector('.minimize-btn');
-    tracker.classList.toggle('minimized');
-    btn.textContent = tracker.classList.contains('minimized') ? '+' : '−';
-}
 
 // ============================================
 // CLIC SUR LES CARTES
@@ -125,16 +80,7 @@ function toggleProgress() {
 function initCards() {
     document.querySelectorAll('.card[data-card-id]').forEach(card => {
         card.addEventListener('click', function() {
-            const cardId = this.getAttribute('data-card-id');
-
-            // Marquer comme vu
-            if (!viewedElements.has(cardId)) {
-                viewedElements.add(cardId);
-                this.classList.add('viewed');
-                updateProgress();
-            }
-
-            // Ouvrir le modal avec les details
+            // Ouvrir le modal avec les détails
             openModal(this);
         });
     });
@@ -213,66 +159,6 @@ function initNotepad() {
     });
 }
 
-// ============================================
-// FORMULAIRE DE THEORIE
-// ============================================
-function initForm() {
-    const form = document.getElementById('theory-form');
-
-    form.addEventListener('submit', function(e) {
-        e.preventDefault();
-
-        // Recuperer les donnees
-        const theory = {
-            suspect: document.getElementById('suspect-choice').value,
-            motive: document.getElementById('motive').value,
-            evidence: document.getElementById('evidence').value,
-            method: document.getElementById('method').value,
-            timestamp: new Date().toISOString()
-        };
-
-        // Sauvegarder localement
-        localStorage.setItem('submitted-theory', JSON.stringify(theory));
-
-        // Afficher confirmation
-        this.style.display = 'none';
-        document.getElementById('confirmation').classList.add('visible');
-
-        // Effet confetti
-        createConfetti();
-    });
-
-    // Verifier si theorie deja soumise
-    const savedTheory = localStorage.getItem('submitted-theory');
-    if (savedTheory) {
-        form.style.display = 'none';
-        document.getElementById('confirmation').classList.add('visible');
-    }
-}
-
-// ============================================
-// CONFETTI
-// ============================================
-function createConfetti() {
-    const colors = ['#c0392b', '#27ae60', '#f39c12', '#3498db', '#9b59b6'];
-
-    for (let i = 0; i < 50; i++) {
-        const confetti = document.createElement('div');
-        confetti.style.cssText = `
-            position: fixed;
-            width: 10px;
-            height: 10px;
-            background: ${colors[Math.floor(Math.random() * colors.length)]};
-            left: ${Math.random() * 100}%;
-            top: -10px;
-            border-radius: ${Math.random() > 0.5 ? '50%' : '0'};
-            z-index: 3000;
-            animation: confetti-fall ${Math.random() * 2 + 2}s linear forwards;
-        `;
-        document.body.appendChild(confetti);
-        setTimeout(() => confetti.remove(), 4000);
-    }
-}
 
 // ============================================
 // RACCOURCIS CLAVIER
@@ -287,8 +173,8 @@ function initKeyboardShortcuts() {
             toggleNotepad();
         }
 
-        // Numeros 1-7 pour naviguer
-        if (e.key >= '1' && e.key <= '7' && !isTyping) {
+        // Numéros 1-6 pour naviguer
+        if (e.key >= '1' && e.key <= '6' && !isTyping) {
             const links = document.querySelectorAll('nav a');
             const index = parseInt(e.key) - 1;
             if (links[index]) links[index].click();
@@ -300,9 +186,7 @@ function initKeyboardShortcuts() {
 // RESET DES DONNEES (pour les tests)
 // ============================================
 function resetAllData() {
-    localStorage.removeItem('viewedElements');
     localStorage.removeItem('investigation-notes');
-    localStorage.removeItem('submitted-theory');
     location.reload();
 }
 
@@ -310,14 +194,11 @@ function resetAllData() {
 // INITIALISATION GLOBALE
 // ============================================
 document.addEventListener('DOMContentLoaded', function() {
-    // Creer les particules
+    // Créer les particules
     createParticles();
 
     // Initialiser la navigation
     initNavigation();
-
-    // Initialiser le suivi de progression
-    initProgress();
 
     // Initialiser les cartes cliquables
     initCards();
@@ -329,9 +210,6 @@ document.addEventListener('DOMContentLoaded', function() {
     loadNotes();
     initNotepad();
 
-    // Initialiser le formulaire
-    initForm();
-
     // Initialiser les raccourcis clavier
     initKeyboardShortcuts();
 
@@ -341,7 +219,7 @@ document.addEventListener('DOMContentLoaded', function() {
         setTimeout(() => animateCards(activeSection), 300);
     }
 
-    console.log('🍃 Enquete Konoha - Site initialise avec succes !');
+    console.log('🩸 Enquête Konoha - Site initialisé avec succès !');
     console.log('💡 Astuce: Appuyez sur N pour ouvrir le bloc-notes');
-    console.log('💡 Astuce: Utilisez les touches 1-7 pour naviguer');
+    console.log('💡 Astuce: Utilisez les touches 1-6 pour naviguer');
 });
