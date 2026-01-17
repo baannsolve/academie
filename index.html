@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dossier Criminel #89-B - Konoha</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Conteneur de particules -->
+    <div id="particles-container"></div>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#" class="active" data-section="accueil" data-tooltip="Page d'accueil">📁 Dossier</a>
+        <a href="#" data-section="victime" data-tooltip="Informations sur la victime">💀 Victime</a>
+        <a href="#" data-section="suspects" data-tooltip="Les 4 suspects">🔍 Suspects</a>
+        <a href="#" data-section="indices" data-tooltip="Preuves materielles">🔬 Indices</a>
+        <a href="#" data-section="temoignages" data-tooltip="Declarations des temoins">💬 Temoignages</a>
+        <a href="#" data-section="chronologie" data-tooltip="Deroulement des faits">⏱ Chronologie</a>
+        <a href="#" data-section="solution" data-tooltip="Soumettre votre theorie">📝 Conclusion</a>
+    </nav>
+
+    <!-- ==================== ACCUEIL ==================== -->
+    <section id="accueil" class="section active">
+        <div class="header">
+            <div class="konoha-symbol">🍃</div>
+            <h1>Dossier Criminel #89-B</h1>
+            <p class="subtitle">Forces de Police de Konoha - Departement des Homicides</p>
+
+            <div class="intro-box">
+                <div class="stamp">⚠ CONFIDENTIEL</div>
+                <p><strong>📅 Date du rapport :</strong> 15 octobre - Annee du Dragon</p>
+                <p><strong>👤 Officier en charge :</strong> Ibiki Morino</p>
+                <br>
+                <p>Le corps de <strong>Takeshi Yamamoto</strong>, marchand prospere du quartier commercial de Konoha,
+                a ete decouvert dans son entrepot a l'aube par un livreur. La victime etait affalee sur son bureau,
+                sans trace de lutte apparente.</p>
+                <br>
+                <p>L'autopsie preliminaire revele un <strong>empoisonnement</strong>. Quatre personnes avaient des
+                raisons d'en vouloir a la victime et n'ont pas d'alibi solide pour la nuit du meurtre.</p>
+                <br>
+                <p><em>🎯 Votre mission : analyser les suspects, les indices et les temoignages pour determiner
+                <strong>QUI</strong> a tue Takeshi Yamamoto, <strong>COMMENT</strong> et <strong>POURQUOI</strong>.</em></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== VICTIME ==================== -->
+    <section id="victime" class="section">
+        <h2 class="section-title">La Victime</h2>
+
+        <div class="card victim-card" data-card-id="victime">
+            <div class="card-image">💀</div>
+            <div class="card-content">
+                <span class="tag suspect">DECEDE</span>
+                <h3>Takeshi Yamamoto</h3>
+                <p><strong>Age :</strong> 52 ans</p>
+                <p><strong>Profession :</strong> Marchand - Proprietaire de "Yamamoto & Fils", la plus grande boutique d'equipement ninja du quartier commercial.</p>
+                <p><strong>Situation familiale :</strong> Veuf, sans enfants directs. Sa niece Akane est sa seule famille.</p>
+                <p><strong>Reputation :</strong> Homme d'affaires impitoyable mais respecte. Connu pour ses methodes commerciales agressives. Plusieurs rivaux lui en voulaient.</p>
+                <div class="detail">
+                    🕐 Derniere fois vu vivant : 21h30, fermant sa boutique. Son corps a ete decouvert a 6h00 le lendemain.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== SUSPECTS ==================== -->
+    <section id="suspects" class="section">
+        <h2 class="section-title">Les Suspects</h2>
+
+        <div class="grid">
+            <div class="card" data-card-id="suspect-a">
+                <div class="card-image" style="background: linear-gradient(135deg, #1abc9c 0%, #16a085 100%);">👤</div>
+                <div class="card-content">
+                    <span class="tag suspect">SUSPECT A</span>
+                    <h3>Haruki Tanaka</h3>
+                    <p><strong>Age :</strong> 48 ans</p>
+                    <p><strong>Profession :</strong> Ancien associe commercial de Takeshi</p>
+                    <p><strong>Mobile potentiel :</strong> Dispute financiere - Haruki pretend que Takeshi l'a escroque lors de la dissolution de leur partenariat il y a 5 ans. Il aurait perdu 2 millions de ryos.</p>
+                    <div class="detail">
+                        <strong>Alibi :</strong> "J'etais chez moi toute la soiree. Ma femme peut en temoigner."
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" data-card-id="suspect-b">
+                <div class="card-image" style="background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);">👩</div>
+                <div class="card-content">
+                    <span class="tag suspect">SUSPECT B</span>
+                    <h3>Yuki Sato</h3>
+                    <p><strong>Age :</strong> 28 ans</p>
+                    <p><strong>Profession :</strong> Serveuse au restaurant Ichiraku</p>
+                    <p><strong>Mobile potentiel :</strong> Relation secrete - Yuki entretenait une liaison avec Takeshi. Des rumeurs suggerent qu'il voulait mettre fin a leur relation.</p>
+                    <div class="detail">
+                        <strong>Alibi :</strong> "J'ai fini mon service a 22h et je suis rentree directement chez moi."
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" data-card-id="suspect-c">
+                <div class="card-image" style="background: linear-gradient(135deg, #9b59b6 0%, #8e44ad 100%);">👨</div>
+                <div class="card-content">
+                    <span class="tag suspect">SUSPECT C</span>
+                    <h3>Kenji Morimoto</h3>
+                    <p><strong>Age :</strong> 45 ans</p>
+                    <p><strong>Profession :</strong> Marchand rival - Proprietaire de "L'Arsenal du Shinobi"</p>
+                    <p><strong>Mobile potentiel :</strong> Jalousie commerciale - La boutique de Kenji perdait des clients au profit de Yamamoto & Fils. Une nouvelle expansion aurait pu le ruiner.</p>
+                    <div class="detail">
+                        <strong>Alibi :</strong> "Je faisais l'inventaire dans mon arriere-boutique jusqu'a minuit. Seul."
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" data-card-id="suspect-d">
+                <div class="card-image" style="background: linear-gradient(135deg, #f39c12 0%, #d68910 100%);">👧</div>
+                <div class="card-content">
+                    <span class="tag suspect">SUSPECT D</span>
+                    <h3>Akane Hayashi</h3>
+                    <p><strong>Age :</strong> 24 ans</p>
+                    <p><strong>Profession :</strong> Etudiante en medecine a l'hopital de Konoha</p>
+                    <p><strong>Mobile potentiel :</strong> Heritage - Niece et unique heritiere de Takeshi. Elle herite de toute sa fortune et de la boutique.</p>
+                    <div class="detail">
+                        <strong>Alibi :</strong> "J'etudiais a la bibliotheque de l'hopital jusqu'a 23h."
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== INDICES ==================== -->
+    <section id="indices" class="section">
+        <h2 class="section-title">Les Indices Materiels</h2>
+
+        <div class="grid">
+            <div class="card" data-card-id="indice-1">
+                <div class="card-image" style="background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%);">📋</div>
+                <div class="card-content">
+                    <span class="tag indice">PREUVE #01</span>
+                    <h3>Rapport d'Autopsie</h3>
+                    <p><strong>Heure du deces :</strong> Entre 22h00 et 23h30</p>
+                    <p><strong>Cause :</strong> Empoisonnement par ingestion d'un derive de la Fleur de Lune Noire, un poison rare mais connu des medecins.</p>
+                    <div class="detail">
+                        Note du medecin legiste : "Ce poison agit en 30 a 45 minutes. La victime a donc ete empoisonnee entre 21h15 et 23h00."
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" data-card-id="indice-2">
+                <div class="card-image" style="background: linear-gradient(135deg, #2ecc71 0%, #27ae60 100%);">🧪</div>
+                <div class="card-content">
+                    <span class="tag indice">PREUVE #02</span>
+                    <h3>Fiole de Poison</h3>
+                    <p>Une petite fiole vide a ete retrouvee dans la ruelle derriere l'entrepot.</p>
+                    <p><strong>Analyse :</strong> Contenait des traces de Fleur de Lune Noire.</p>
+                    <div class="detail">
+                        Des empreintes partielles ont ete relevees mais sont trop degradees pour identification formelle. Cependant, elles semblent appartenir a une main de taille moyenne.
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" data-card-id="indice-3">
+                <div class="card-image" style="background: linear-gradient(135deg, #e67e22 0%, #d35400 100%);">✉️</div>
+                <div class="card-content">
+                    <span class="tag document">PREUVE #03</span>
+                    <h3>Lettre Compromettante</h3>
+                    <p>Trouvee dans le tiroir ferme a cle du bureau de Takeshi.</p>
+                    <div class="detail">
+                        <em>"Takeshi, tu ne peux pas me jeter comme ca apres tout ce que j'ai sacrifie pour toi. Si tu refuses de me voir ce soir, tu le regretteras. - Y."</em>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" data-card-id="indice-4">
+                <div class="card-image" style="background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);">📅</div>
+                <div class="card-content">
+                    <span class="tag document">PREUVE #04</span>
+                    <h3>Agenda de la Victime</h3>
+                    <p>L'agenda professionnel de Takeshi revele plusieurs rendez-vous interessants :</p>
+                    <div class="detail">
+                        - 18h : "Reunion banque - pret expansion"<br>
+                        - 20h : "Diner - Y. (annule)"<br>
+                        - Note en marge : "Finaliser contrat Rue du Commerce - K. va etre furieux"
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" data-card-id="indice-5">
+                <div class="card-image" style="background: linear-gradient(135deg, #1abc9c 0%, #16a085 100%);">🗺️</div>
+                <div class="card-content">
+                    <span class="tag document">PREUVE #05</span>
+                    <h3>Plan d'Expansion</h3>
+                    <p>Documents officiels trouves sur le bureau :</p>
+                    <p>Takeshi avait signe un contrat pour ouvrir une <strong>deuxieme boutique Rue du Commerce</strong>, juste en face de "L'Arsenal du Shinobi".</p>
+                    <div class="detail">
+                        L'ouverture etait prevue dans 2 semaines. Cela aurait certainement ruine la concurrence directe.
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" data-card-id="indice-6">
+                <div class="card-image" style="background: linear-gradient(135deg, #9b59b6 0%, #8e44ad 100%);">🍵</div>
+                <div class="card-content">
+                    <span class="tag indice">PREUVE #06</span>
+                    <h3>Tasse de The</h3>
+                    <p>Une tasse a moitie vide a ete trouvee sur le bureau de Takeshi.</p>
+                    <p><strong>Analyse :</strong> Le the contenait des traces du poison.</p>
+                    <div class="detail">
+                        La theiere etait dans l'arriere-boutique. Quelqu'un a du verser le poison directement dans la tasse.
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" data-card-id="indice-7">
+                <div class="card-image" style="background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);">🔓</div>
+                <div class="card-content">
+                    <span class="tag indice">PREUVE #07</span>
+                    <h3>Serrure Forcee</h3>
+                    <p>La porte arriere de l'entrepot presente des marques de crochetage.</p>
+                    <div class="detail">
+                        Les marques sont recentes. Quelqu'un s'est introduit par l'arriere sans utiliser la porte principale.
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" data-card-id="indice-8">
+                <div class="card-image" style="background: linear-gradient(135deg, #f1c40f 0%, #f39c12 100%);">👣</div>
+                <div class="card-content">
+                    <span class="tag indice">PREUVE #08</span>
+                    <h3>Traces de Pas</h3>
+                    <p>Des empreintes de pas boueuses menent de la porte arriere jusqu'au bureau.</p>
+                    <div class="detail">
+                        Pointure : environ 42 (taille masculine moyenne). La boue correspond a celle du chantier de la Rue du Commerce.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== TEMOIGNAGES ==================== -->
+    <section id="temoignages" class="section">
+        <h2 class="section-title">Les Temoignages</h2>
+
+        <div class="grid">
+            <div class="card" data-card-id="temoin-1">
+                <div class="card-image" style="background: linear-gradient(135deg, #95a5a6 0%, #7f8c8d 100%);">🍜</div>
+                <div class="card-content">
+                    <span class="tag temoignage">TEMOIN #01</span>
+                    <h3>Teuchi (Patron d'Ichiraku)</h3>
+                    <p><strong>Declaration :</strong></p>
+                    <div class="detail">
+                        "Yuki a bien fini son service a 22h comme d'habitude. Mais je l'ai vue partir en direction du quartier commercial, pas vers chez elle. Elle avait l'air tres agitee."
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" data-card-id="temoin-2">
+                <div class="card-image" style="background: linear-gradient(135deg, #95a5a6 0%, #7f8c8d 100%);">🛡️</div>
+                <div class="card-content">
+                    <span class="tag temoignage">TEMOIN #02</span>
+                    <h3>Garde de Nuit</h3>
+                    <p><strong>Declaration :</strong></p>
+                    <div class="detail">
+                        "J'ai vu un homme sortir de la ruelle derriere la boutique Yamamoto vers 22h45. Il marchait vite et portait une capuche. Taille moyenne, carrure robuste."
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" data-card-id="temoin-3">
+                <div class="card-image" style="background: linear-gradient(135deg, #95a5a6 0%, #7f8c8d 100%);">🏦</div>
+                <div class="card-content">
+                    <span class="tag temoignage">TEMOIN #03</span>
+                    <h3>Employe de la Banque</h3>
+                    <p><strong>Declaration :</strong></p>
+                    <div class="detail">
+                        "M. Yamamoto est venu a 18h pour finaliser son pret. Il etait tres enthousiaste. Il a mentionne que 'certains concurrents allaient avoir une mauvaise surprise'."
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" data-card-id="temoin-4">
+                <div class="card-image" style="background: linear-gradient(135deg, #95a5a6 0%, #7f8c8d 100%);">🏠</div>
+                <div class="card-content">
+                    <span class="tag temoignage">TEMOIN #04</span>
+                    <h3>Voisine d'Haruki Tanaka</h3>
+                    <p><strong>Declaration :</strong></p>
+                    <div class="detail">
+                        "J'ai vu M. Tanaka rentrer chez lui vers 20h30. Je ne l'ai pas vu ressortir de la soiree, mais je me suis couchee tot, vers 21h30."
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" data-card-id="temoin-5">
+                <div class="card-image" style="background: linear-gradient(135deg, #95a5a6 0%, #7f8c8d 100%);">📚</div>
+                <div class="card-content">
+                    <span class="tag temoignage">TEMOIN #05</span>
+                    <h3>Bibliothecaire de l'Hopital</h3>
+                    <p><strong>Declaration :</strong></p>
+                    <div class="detail">
+                        "Akane Hayashi etait bien a la bibliotheque. Elle est arrivee vers 19h. Je l'ai vue partir vers 22h45, pas 23h comme elle le pretend. Elle semblait pressee."
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" data-card-id="temoin-6">
+                <div class="card-image" style="background: linear-gradient(135deg, #95a5a6 0%, #7f8c8d 100%);">📦</div>
+                <div class="card-content">
+                    <span class="tag temoignage">TEMOIN #06</span>
+                    <h3>Livreur du Quartier</h3>
+                    <p><strong>Declaration :</strong></p>
+                    <div class="detail">
+                        "Vers 22h, j'ai vu de la lumiere dans la boutique de M. Morimoto alors qu'elle etait censee etre fermee. J'ai aussi vu quelqu'un sortir par la porte de service."
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== CHRONOLOGIE ==================== -->
+    <section id="chronologie" class="section">
+        <h2 class="section-title">Chronologie des Evenements</h2>
+
+        <div class="timeline">
+            <div class="timeline-item">
+                <h4>18h00</h4>
+                <p>Takeshi Yamamoto se rend a la banque pour finaliser son pret d'expansion. Il est vu "enthousiaste" par l'employe.</p>
+            </div>
+
+            <div class="timeline-item">
+                <h4>19h00</h4>
+                <p>Akane Hayashi arrive a la bibliotheque de l'hopital pour etudier.</p>
+            </div>
+
+            <div class="timeline-item">
+                <h4>20h00</h4>
+                <p>Diner prevu avec "Y." (Yuki?) annule selon l'agenda de Takeshi.</p>
+            </div>
+
+            <div class="timeline-item">
+                <h4>20h30</h4>
+                <p>Haruki Tanaka est vu rentrant chez lui par sa voisine.</p>
+            </div>
+
+            <div class="timeline-item">
+                <h4>21h30</h4>
+                <p>Takeshi Yamamoto ferme sa boutique. C'est la derniere fois qu'il est vu vivant.</p>
+            </div>
+
+            <div class="timeline-item">
+                <h4>22h00</h4>
+                <p>Yuki Sato termine son service chez Ichiraku. Elle est vue partant vers le quartier commercial. Lumiere vue dans la boutique de Morimoto.</p>
+            </div>
+
+            <div class="timeline-item critical">
+                <h4>21h15 - 23h00</h4>
+                <p style="color: var(--color-blood); font-weight: bold;">⚠️ FENETRE D'EMPOISONNEMENT - Le poison a ete administre pendant cette periode (effet en 30-45 min).</p>
+            </div>
+
+            <div class="timeline-item">
+                <h4>22h45</h4>
+                <p>Un homme a capuche est vu sortant de la ruelle derriere la boutique Yamamoto. Akane quitte la bibliotheque (15 minutes avant ce qu'elle pretend).</p>
+            </div>
+
+            <div class="timeline-item">
+                <h4>06h00 (lendemain)</h4>
+                <p>Le corps de Takeshi est decouvert par un livreur.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== FORMULAIRE DE CONCLUSION ==================== -->
+    <section id="solution" class="section">
+        <h2 class="section-title">Soumettez Votre Theorie</h2>
+
+        <div class="solution-section">
+            <div class="theory-form">
+                <h3>🔎 Rapport d'Enquete Final</h3>
+
+                <form id="theory-form">
+                    <div class="form-group">
+                        <label for="suspect-choice">👤 Qui est le coupable selon vous ?</label>
+                        <select id="suspect-choice" required>
+                            <option value="">-- Selectionnez un suspect --</option>
+                            <option value="haruki">Haruki Tanaka (Ancien associe)</option>
+                            <option value="yuki">Yuki Sato (Serveuse)</option>
+                            <option value="kenji">Kenji Morimoto (Marchand rival)</option>
+                            <option value="akane">Akane Hayashi (Niece)</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="motive">💡 Quel etait son mobile (sa raison) ?</label>
+                        <textarea id="motive" placeholder="Expliquez pourquoi cette personne aurait voulu tuer Takeshi..." required></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="evidence">🔗 Quels indices soutiennent votre theorie ?</label>
+                        <textarea id="evidence" placeholder="Listez les preuves et temoignages qui accusent cette personne..." required></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="method">⚗️ Comment le meurtre a-t-il ete commis ?</label>
+                        <textarea id="method" placeholder="Decrivez comment le coupable s'y est pris..." required></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-btn">📨 Soumettre ma Theorie</button>
+                </form>
+
+                <div class="confirmation-message" id="confirmation">
+                    <h3>✅ Theorie Enregistree !</h3>
+                    <p>Votre rapport a bien ete soumis. Votre professeur revelera la solution.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== COMPTEUR DE PROGRESSION ==================== -->
+    <div class="progress-tracker" id="progress-tracker">
+        <button class="minimize-btn" onclick="toggleProgress()">−</button>
+        <h4>📊 Progression</h4>
+        <div class="progress-bar">
+            <div class="progress-fill" id="progress-fill" style="width: 0%"></div>
+        </div>
+        <p class="progress-text"><span id="viewed-count">0</span> / <span id="total-count">19</span> elements consultes</p>
+    </div>
+
+    <!-- ==================== BLOC-NOTES ==================== -->
+    <button class="notepad-toggle" onclick="toggleNotepad()" data-tooltip="Bloc-notes">📝</button>
+
+    <div class="notepad" id="notepad">
+        <div class="notepad-header">
+            <span>📝 Mes Notes</span>
+            <button onclick="toggleNotepad()" style="background:none;border:none;color:white;cursor:pointer;font-size:1.2rem;">✕</button>
+        </div>
+        <div class="notepad-content">
+            <textarea id="notes-area" placeholder="Notez vos observations, suspicions et indices importants ici..."></textarea>
+            <button class="notepad-save" onclick="saveNotes()">💾 Sauvegarder</button>
+        </div>
+    </div>
+
+    <!-- ==================== MODAL ==================== -->
+    <div class="modal-overlay" id="modal">
+        <div class="modal-content" id="modal-content">
+            <button class="modal-close" onclick="closeModal()">✕</button>
+            <div id="modal-body"></div>
+        </div>
+    </div>
+
+    <!-- JavaScript externe -->
+    <script src="script.js"></script>
+
+</body>
+</html>
